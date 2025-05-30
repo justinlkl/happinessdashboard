@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  /* font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif; */ /* Removed specific font-family rule, Tailwind's font-sans will apply */
+}
+
+@layer base {
+  :root {
+    --background: 207 89% 94%; /* Very Light Blue: #E3F2FD */
+    --foreground: 215 25% 27%; /* Dark Blue-Gray: #3A475A */
+
+    --card: 207 89% 96%; /* Slightly lighter than background for cards */
+    --card-foreground: 215 25% 22%; /* Darker for card text */
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 27%;
+
+    --primary: 207 90% 61%; /* Deep Sky Blue: #42A5F5 */
+    --primary-foreground: 0 0% 100%; /* White for contrast on primary */
+
+    --secondary: 207 50% 85%; /* Lighter shade of blue */
+    --secondary-foreground: 215 25% 22%;
+
+    --muted: 207 50% 90%; /* Muted blue */
+    --muted-foreground: 215 20% 45%;
+
+    --accent: 125 39% 57%; /* Green: #66BB6A */
+    --accent-foreground: 0 0% 100%; /* White for contrast on accent */
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 207 30% 80%; /* Lighter blue-gray border */
+    --input: 207 30% 88%; /* Input background */
+    --ring: 207 90% 61%; /* Primary color for rings */
+
+    --chart-1: 207 90% 61%; /* Primary */
+    --chart-2: 125 39% 57%; /* Accent */
+    --chart-3: 30 80% 65%; /* Orange-ish for variety */
+    --chart-4: 260 70% 70%; /* Purple-ish for variety */
+    --chart-5: 0 70% 70%; /* Red-ish for variety */
+    
+    --radius: 0.5rem;
+
+    /* Sidebar specific colors - can remain or be adjusted if sidebar is heavily used */
+    --sidebar-background: 207 60% 92%;
+    --sidebar-foreground: 215 25% 22%;
+    --sidebar-primary: 207 90% 61%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 125 39% 57%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 207 30% 75%;
+    --sidebar-ring: 207 90% 61%;
+  }
+
+  .dark {
+    /* Dark theme colors can be defined here if needed, but request focuses on light theme */
+    --background: 215 28% 17%; /* Dark Blue-Gray */
+    --foreground: 207 89% 94%; /* Light Blue */
+
+    --card: 215 28% 20%;
+    --card-foreground: 207 89% 94%;
+
+    --popover: 215 28% 15%;
+    --popover-foreground: 207 89% 94%;
+
+    --primary: 207 90% 61%; /* Deep Sky Blue */
+    --primary-foreground: 215 25% 15%; /* Darker for contrast on primary in dark mode */
+
+    --secondary: 215 20% 30%;
+    --secondary-foreground: 207 89% 94%;
+
+    --muted: 215 20% 25%;
+    --muted-foreground: 207 50% 75%;
+
+    --accent: 125 39% 57%; /* Green */
+    --accent-foreground: 215 25% 15%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 215 20% 35%;
+    --input: 215 20% 30%;
+    --ring: 207 90% 61%;
+
+    --chart-1: 207 90% 61%;
+    --chart-2: 125 39% 57%;
+    --chart-3: 30 80% 65%;
+    --chart-4: 260 70% 70%;
+    --chart-5: 0 70% 70%;
+
+    --sidebar-background: 215 28% 15%;
+    --sidebar-foreground: 207 89% 94%;
+    --sidebar-primary: 207 90% 61%;
+    --sidebar-primary-foreground: 215 25% 15%;
+    --sidebar-accent: 125 39% 57%;
+    --sidebar-accent-foreground: 215 25% 15%;
+    --sidebar-border: 215 20% 30%;
+    --sidebar-ring: 207 90% 61%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
