@@ -4,7 +4,7 @@
 
 This project investigates the multifaceted nature of public happiness in the digital era. Our central research question is: **How do key social factors, such as physical health, Gross Domestic Product (GDP), life expectancy, educational level, social support, freedom of choice, generosity, and corruption perception, correlate with public happiness as expressed in real-time through sentiment on X (formerly Twitter) regarding contemporary topics?**
 
-We developed an interactive dashboard that combines AI-powered sentiment analysis of X (Twitter) data with robust socioeconomic statistics from the World Bank Open Data and the World Happiness Report 2025. The goal is to provide a dynamic and accessible tool for understanding the complex interplay between broad socioeconomic conditions and individual emotional expression in the digital sphere. This research aims to supplement traditional happiness studies by leveraging computational social science methods to capture real-time, unmediated public sentiment.
+We developed an interactive dashboard that combines AI-powered sentiment analysis of X (Twitter) data with robust socioeconomic statistics from the World Bank Open Data and the World Happiness Report 2025. The goal is to provide a dynamic and accessible tool for understanding the complex interplay between broad socioeconomic conditions and individual emotional expression in the digital sphere. This research aims to supplement traditional happiness studies by leveraging computational social science methods to capture the real-time, unmediated public sentiment.
 
 ## Dashboard
 
@@ -38,7 +38,7 @@ Our dashboard features:
 * **Positive Correlation with Happiness:** Healthy Life Expectancy, GDP per Capita (with diminishing returns), Education Level (context-dependent).
 * **Strong Negative Correlation with Happiness:** Corruption Perception.
 * **Weak Correlation with Happiness:** Generosity (reflecting cultural variations).
-* **Outliers:** Costa Rica demonstrates high happiness despite moderate GDP, attributed to strong social support and freedom. Conversely, despite a high GDP, Qatar shows lower happiness, linked to weaker social support and freedom.
+* **Outliers:** Costa Rica demonstrates high happiness despite moderate GDP, attributed to strong social support and freedom. Conversely, despite a high GDP, Qatar exhibits lower happiness, which is linked to weaker social support and freedom.
 * **Key Insight:** Social support, freedom, and low corruption are often more critical drivers of happiness than wealth alone.
 
 ### X (Twitter) Sentiment Analysis:
@@ -69,5 +69,3 @@ Our dashboard features:
 * Sentiment Analysis
 * Dashboard: Google Looker Studio
 * Data Sources: X API / Kaggle, World
-# happinessdashboard
-# happinessdashboard
